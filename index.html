@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumpenscript.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css" rel="stylesheet">
+    <link href="./css/fact.dragresize.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+</head>
+<body>
+    <aside id="left">
+        page<br />
+        &nbsp;0&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;1&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;2&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;3&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;4&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;5&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;6&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;7&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;8&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        &nbsp;9&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        10&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        11&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        12&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        13&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        14&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        15&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        16&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        17&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        18&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        19&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        20&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        21&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        22&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        23&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        24&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        25&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        26&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        27&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        28&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+        29&emsp;<a name="page"><img class="pageImg" name="pageImg"></a><br />
+    </aside>
+    <section id="main">
+        <div id="myCanvas" width=600 height=400>
+        </div>
+    </section>
+    <aside id="right">
+        <button class="pseudobutton" onclick="$('#fileupload').trigger('click');">사진 가져오기<span
+                class="icon-picture"></button></a>
+        <input type="file" multiple="multiple" name="fileupload[]" id="fileupload" accept=".gif,.jpg,.png,.svg|image/*"
+            style="max-width:300px;display:none;">
+        <br>
+        <button id="newText">텍스트 생성</button><br>
+        <div>
+            tools
+        </div>
+        <button id="save">저장하기</button><br>
+        <button id="converter">이미지 생성</button><br>
+        <button id="convertAll">주문하기</button><br>
+        <button name="collage">4X6 콜라주</button><br>
+        <button name="collage">2x2 콜라주</button><br>
+        <input type="checkbox" id=snap> snap mode<br>
+        화면효과<br>
+        <select name="filters" id="filter">
+            <option value="unset">original</option>
+            <option value="blur(5px)">blur(5px)</option>
+            <option value="contrast(200%)">contrast(200%)</option>
+            <option value="grayscale(80%)">Invert</option>
+            <option value="hue-rotate(90deg)">hue-rotate(90deg)</option>
+            <option value="drop-shadow(16px 16px 20px red) invert(75%)">Solarize</option>
+        </select>
+        폰트<br>
+        <select name="fontFamilies" id="fontFamily">
+            <option value="Nanum Gothic">Nanum Gothic</option>
+            <option value="Arial">Arial</option>
+            <option value="BinggraeMelona">BinggraeMelona</option>
+            <option value="RIDIBatang">RIDIBatang</option>
+            <option value="Nanum Pen Script">Nanum Pen Script</option>
+            <option value="Nanum Brush Script">Nanum Brush Script</option>
+        </select>
+        글자크기<br>
+        <input type="text" id="fontSize" value="64">
+    </aside>
+    <script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

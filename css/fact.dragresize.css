@@ -1,0 +1,66 @@
+div[name="resizerbox"] {
+    border: 1px solid black;
+    width: 8px;
+    height: 8px;
+    z-index: 100;
+    position: absolute;
+}
+
+.ui-resizable-handle {
+    border: 1px solid black;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+}
+
+.ui-resizable-nw {
+    top: -10px;
+    left: -10px;
+}
+
+.ui-resizable-n {
+    top: -10px;
+    left: 50%;
+    margin-left: -4px;
+    cursor: n-resize;
+
+}
+
+.ui-resizable-ne {
+    top: -10px;
+    right: -10px;
+
+}
+
+.ui-resizable-w {
+    top: 50%;
+    margin-top: -4px;
+    left: -10px;
+    cursor: w-resize;
+}
+
+.ui-resizable-e {
+    top: 50%;
+    margin-top: -4px;
+    right: -10px;
+    cursor: e-resize;
+}
+
+.ui-resizable-sw {
+    bottom: -7px;
+    left: -10px;
+}
+
+.ui-resizable-s {
+    bottom: -7px;
+    left: 50%;
+    margin-left: -4px;
+    cursor: s-resize;
+
+}
+
+.ui-resizable-se {
+    bottom: -7px;
+    right: -10px;
+}

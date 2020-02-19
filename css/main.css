@@ -1,0 +1,86 @@
+
+        .drsElement {
+            position: absolute;
+            border: 0px;
+        }
+        .drsMoveHandle {
+            width: 100px;
+            height: 100px;
+            cursor: move;
+        }
+
+        .photo {
+            width: 100px;
+            height: 100px;
+        }
+
+        #myCanvas {
+            left: 226px;
+            top: 243px;
+            width: 600px;
+            height: 400px;
+            position: relative;
+            background-color: white;
+        }
+
+        #left {
+            top: 0px;
+            left: 0%;
+            position: absolute;
+            width: 10%;
+            height: 900px;
+            outline: 1px solid;
+            background: #f2f2f2;
+            overflow: scroll;
+        }
+
+        #right {
+            top: 0px;
+            left: 90%;
+            width: 10%;
+            height: 900px;
+            position: absolute;
+            outline: 1px solid;
+            right: 0;
+        }
+
+        #main {
+            top: 0px;
+            left: 10%;
+            position: absolute;
+            width: 80%;
+            height: 900px;
+            outline: 1px solid;
+            position: relative;
+            background-color: teal;
+        }
+
+        .pageImg {
+            width: 60px;
+            height: 40px;
+            outline: 1px solid;
+        }
+
+        .pageImg:hover {
+            cursor: pointer;
+        }
+
+        #dragger {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+        }
+
+        input[type="text"] {
+            border: 0.1px dotted;
+            background-color: rgba(255, 255, 255, 0);
+            font-size: 64px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .textBox {
+            overflow: auto;
+            background-color: rgba(255, 255, 255, 0);
+        }
